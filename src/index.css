@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
+    --background: 270 20% 98%;
     --foreground: 220 20% 10%;
 
     --card: 0 0% 100%;
@@ -37,11 +37,12 @@
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(175 80% 40%), hsl(200 80% 50%));
-    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 25% 94%) 100%);
-    --shadow-glow: 0 0 40px hsl(175 80% 40% / 0.3);
-    --shadow-card: 0 4px 20px hsl(220 20% 10% / 0.08);
-    --shadow-card-hover: 0 8px 30px hsl(220 20% 10% / 0.12);
+    --gradient-primary: linear-gradient(135deg, hsl(335, 81%, 69%), hsla(59, 100%, 69%, 0.918));
+    --gradient-hero: linear-gradient(180deg, hsl(206, 55%, 59%) 0%, hsl(29, 73%, 71%) 100%);
+
+    --shadow-glow: 0 0 40px hsla(320, 96%, 68%, 0.932);
+    --shadow-card: 0 4px 20px hsl(300, 86%, 54%);
+    --shadow-card-hover: 0 8px 30px hsla(330, 79%, 46%, 0.979);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -83,14 +84,14 @@
     --ring: 175 80% 50%;
 
     /* Custom tokens dark */
-    --gradient-primary: linear-gradient(135deg, hsl(175 80% 50%), hsl(200 80% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(318, 80%, 50%), hsl(200 80% 60%));
     --gradient-hero: linear-gradient(180deg, hsl(220 25% 6%) 0%, hsl(220 30% 10%) 100%);
-    --shadow-glow: 0 0 60px hsl(175 80% 50% / 0.4);
-    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
-    --shadow-card-hover: 0 8px 30px hsl(175 80% 50% / 0.15);
+    --shadow-glow: 0 0 60px hsla(323, 51%, 73%, 0.925);
+    --shadow-card: 0 4px 20px hsla(337, 100%, 88%, 0.897);
+    --shadow-card-hover: 0 8px 30px hsla(305, 80%, 50%, 0.863);
 
     --sidebar-background: 220 25% 8%;
-    --sidebar-foreground: 210 20% 90%;
+    --sidebar-foreground: 290 28% 90%;
     --sidebar-primary: 175 80% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 20% 15%;
