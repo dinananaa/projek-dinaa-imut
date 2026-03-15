@@ -18,10 +18,23 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex justify-center"
           >
+            <img
+              src="/dinanaaa.jpeg"
+              alt="Foto Dina"
+              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-primary shadow-xl"
+            />
+          </motion.div>
+
+
+          {/* TEXT KANAN */}
+          <div className="text-center md:text-left">
+
+
             <motion.span 
               className="inline-block px-4 py-2 rounded-full glass text-sm font-medium text-primary mb-6"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -46,11 +59,11 @@ export default function HeroSection() {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-xl text-muted-foreground mb-8"
           >
-            Saya membangun aplikasi web yang indah dan fungsional, 
-            serta membagikan pengetahuan melalui konten yang inspiratif.
+            Nama aku Dina, aku adalah seorang pelajar dari Aceh yang pertama kali
+          mencoba coding. Terimakasih sudah bersedia melihat perjalanan portofolio saya.
           </motion.p>
 
           <motion.div
@@ -118,5 +131,7 @@ export default function HeroSection() {
         <ArrowDown className="h-5 w-5 text-primary" />
       </motion.button>
     </section>
+    
   );
 }
+
